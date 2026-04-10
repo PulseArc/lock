@@ -1,0 +1,1363 @@
+
+.span-gray{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1em;
+    font-family: "SegoeUI", sans-serif;
+}
+.dot{
+    display: inline-block; /* Устанавливаем блочный формат */
+    vertical-align: middle; /* Центрируем точку относительно текста */
+    font-size: 0.7em; /* Размер точки */
+    margin-right: 5px; /* Отступ справа от текста */
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+    color: #ffffff; /* Цвет точки */
+    
+}
+.cast{
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+}
+
+
+.full-head{
+    font-size: 1.018em;
+    font-family: "SegoeUI", sans-serif;
+}
+.full-head-year{
+  font-size: 1.1em ;
+}
+.full-genre{
+    margin-top: 1.5em;
+    font-size: 1em;
+    font-family: Helvetica, sans-serif;
+}
+.full-smile-rate-warp{
+  font-family: Helvetica, sans-serif;
+  background: #373737;
+  border-radius: 0.8em;
+  border: 1.5px solid #424242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  margin-right: 1em;
+  padding: 0.1em 0.3em; /* Добавил равные отступы слева и справа */
+  min-width: 3.6em; /* Минимальная ширина, но элемент будет расширяться при добавлении текста */
+  margin-top: 1em;
+  
+}
+.full-smile-rate-warp > div:last-child {
+    font-size: 0.7em;
+    padding: 0 0.5em;
+    
+    
+}
+.full-smile{
+    display: flex;
+    flex-direction: row; /* Размещаем элементы в строку */
+    align-items: start;
+    margin-top: 0.1em;
+    cursor: pointer;
+}
+.full-smile-rate{
+    font-size: 0.9em !important;
+}
+.reaction-icon {
+  width: 1.2em;
+  height: 1.2em;
+  position: relative;
+  top: -1px;
+  transition: transform 0.2s ease-in-out;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px) rotate(-5deg); }
+  50% { transform: translateX(3px) rotate(5deg); }
+  75% { transform: translateX(-3px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s ease-in-out;
+}
+.full-duration{
+   
+    font-size: 1.1em;
+    font-family: Helvetica, sans-serif;
+    color: rgb(104, 236, 113);
+}
+.full-quality {
+    margin-top: 1em;
+    font-family: Helvetica, sans-serif;
+    line-height: 2; /* Межстрочный интервал */
+    color: rgb(218, 215, 215);
+   
+  }
+  .age, .Inlet {
+    margin-top: 0.5em;
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    
+    text-align: center;
+    
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  .age {
+    margin-right: 0.5em;
+  }
+  
+  
+.full-card-rate{
+    display: flex;
+  flex-direction: row; /* Размещаем элементы в строку */
+  align-items: start;
+  margin-top: 0.1em;
+}
+.full-rate {
+    font-family: Helvetica, sans-serif;
+    background: rgba(139, 138, 138, 0.15);
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Выровнять текст по центру */
+    font-size: 1.2em;
+    margin-right: 1em;
+    padding-left: 0.3em;
+    width: 4.3em;
+}
+.full-rate > div:last-child {
+    font-size: 0.7em;
+    padding: 0 0.5em;
+    
+    
+}
+.movie-card{
+    position: absolute;
+  top: 7em !important; /* Размещает карточку по центру */
+  left: 2em; /* Можно настроить для правильного выравнивания */
+  z-index: 10; /* Карточка будет поверх фона */
+ 
+  display: flex;
+  flex-direction: row; /* Размещаем элементы в строку */
+  align-items: start; /* Выравнивание по вертикали */
+  background-color: transparent;
+  
+  border: none;
+  
+}
+.movie-card-img{
+    width: 16rem !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    /* Устанавливает высокий приоритет по наложению */
+    
+    border-radius: 18px;
+}
+.card-description{
+    margin-top: 6em;
+    margin-left: 50px; /* Отступ между изображением и текстом */
+    display: flex;
+    flex-direction: column; /* Текст внутри карточки будет в столбик */
+    justify-content: center; /* Выравнивание текста по вертикали */
+    
+}
+
+.card-title{
+    font-size: 3.5em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    margin-top:0.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+    margin-left: -0.03em;
+    line-height: 1;
+}
+.none{
+ 
+  position: relative;
+}
+.full-details{
+  position: absolute;
+  top: 42em; /* Размещает карточку по центру */
+  left: 1.7em; /* Можно настроить для правильного выравнивания */
+  z-index: 10; /* Карточка будет поверх фона */
+  
+  display: flex;
+  flex-direction: row; /* Размещаем элементы в строку */
+  align-items: start; /* Выравнивание по вертикали */
+  background-color: transparent;
+  width: 95%;
+  border: none;
+}
+
+.full-player{
+  position: relative;
+  padding-top: 1em;
+left: 1.7em;
+z-index: 10;
+
+display: flex;
+flex-direction: row;
+align-items: start;
+background-color: transparent;
+width: 100%;
+max-width: calc(100% - 3.4em); /* Учёт отступов от левого и правого краёв */
+border: none;
+overflow: hidden;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+  
+}
+
+.text-capitalize span {
+  display: inline-block;
+  padding-right: 2em;
+}
+
+.REK_CARD{
+  margin-top: 1em;
+}
+.full-more-details{
+   
+    font-family: Helvetica, sans-serif;
+   
+    margin-top: -10em;
+   margin-left: 1.3em;
+    z-index: 10; /* Убедитесь, что это значение больше, чем у `.background-pc` */
+    height: auto; /* Высота контента */
+   
+    
+}
+.full-about-the-film{
+    margin-top: 1.5em;
+    width: 90%;
+    
+}
+.full-conteiner-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
+}
+
+.background-pc {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Если нужно занять весь экран, используйте 100vh */
+    overflow: hidden; /* Скрывает излишки изображения */
+    z-index: 0;
+}
+
+@media (min-width: 600.05px) {
+  .Phone-version{
+    display: none;
+  }
+  .details-content-area{
+    
+    display: none;
+  }
+.mobile-img-card{
+
+display: none;
+}
+
+.mobile-img {
+  
+  mask-image:  linear-gradient(black 70%, transparent 100%),  /* сверху */
+    linear-gradient(to top, black 70%, transparent 100%), /* снизу */
+    linear-gradient(to right, black 70%, transparent 100%), /* слева */
+    linear-gradient(to left, black 70%, transparent 100%); /* справа */
+  mask-composite: intersect;
+  
+z-index: -1;
+  /* Фильтры */
+  filter: brightness(0.55); /* Затемнение */
+  opacity: 1; /* Полупрозрачность */
+  transition: opacity 1s ease-in-out; /* Плавный эффект изменения прозрачности */
+}
+
+/* Затемнение сверху */
+
+
+.mobile-card-description {
+  position: absolute;
+  left: 17em;
+  top: 1.7em;
+  
+ 
+}
+
+.mobile-more-details{
+  bottom: 40vh;
+}
+.movie-card{
+  top: 2.5em;
+  left: 1.5em;
+  display: block;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 8em 1fr; /* Отступ слева 8em, контент растягивается */
+  height: calc(300px + 30vmin);
+  margin-top: -4em ;
+  background-color: transparent;
+  min-height: 600px;
+  
+
+  img {
+    
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+  }
+
+  &:after {
+    content: "";
+    background-color: #000;
+    opacity: 0.5;
+    grid-area: 1/-1;
+  }
+}
+
+.hero__content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+
+  > * {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+
+.mobile-details{
+  display: block;
+  position: relative;
+  margin-top: -2em;
+  
+}
+
+.mobile-about-the-film{
+  margin-top: 0.5em;
+  color: rgb(218, 215, 215);
+  font-size: 17.2192px;
+  font-family: 'Segoe UI',  sans-serif; 
+  width: 90%;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+.mobile-more{
+  margin-left: 0.4em;
+  color: white;
+  font-family: 'Segoe UI',  sans-serif; 
+  font-size: 21px !important;
+}
+.container-column {
+  display: flex;
+  justify-content: flex-start; /* Выравнивание по левому краю */
+  gap: 10px; /* Расстояние между столбцами */
+  max-width: 800px; /* Ограничение ширины */
+  margin-left: 0;
+  margin-top: 1em;
+  font-family: "SegoeUI", sans-serif;
+}
+
+.column {
+  width: auto; /* Автоматическая ширина */
+  padding: 0;
+  padding-right: 1.3em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7em;
+}
+
+.column p {
+  margin: 0;
+}
+
+.column p:last-child {
+  white-space: nowrap; /* Запрещает перенос строки */
+}
+
+.column p {
+  margin-top: auto; /* Прижимает текст вниз */
+}
+
+.Mobile{
+  display: block;
+  position: relative;
+}
+
+
+/* Адаптация под разные экраны */
+
+
+
+}
+
+.actor-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  
+}
+
+.actor-card-wrapper {
+  flex: 1 1 calc(100% - 20px); /* 6 карточек в ряду */
+  max-width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.actor-card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.actor-card:hover,
+.actor-card:active {
+  transform: scale(1.05);
+}
+
+.actor-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.actor-name-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+  
+}
+
+.actor-card:hover .actor-name-overlay,
+.actor-card:active .actor-name-overlay {
+  opacity: 1;
+}
+
+.actor-name {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1184px) {
+    .background-pc {
+      padding: 0;
+    }
+    .movie-card-img{
+        
+        width: 15rem !important;
+        width: 100%;
+    }
+    .movie-card {
+      top: 2.5em;
+  left: 0.5em;
+      
+      max-width: 300px;
+    }
+    .full-details{
+      margin-top: -4.5em;
+      left: 1.7em;
+    }
+  
+    .card-description {
+      font-size: 14.0905px;
+      left: 16.5em;
+      top: 3.7em;
+      
+      
+    }
+    
+
+  
+  
+  .full-more-details{
+   
+    font-size: 15px;
+    margin-top: -10em!important;
+   margin-left: -0.5em;
+   
+   
+  }
+  .mobile-details{ 
+     
+    margin-top: -4em ;
+     
+    
+  }
+  .mobile-about-the-film{
+    margin-left: 0.5em;
+    font-size: 15.2192px;
+    
+  }
+  .mobile-more{
+    margin-left: 0.4em;
+    font-size: 19px !important;
+  }
+}
+
+
+
+  @media (max-width: 900px) {
+    .background-pc {
+      padding: 0;
+    }
+    .movie-card-img{
+        width: 13rem !important;
+        
+    }
+    .movie-card {
+       
+      top: 2.5em;
+      left: 0.5em;
+      max-width: 150px;
+    }
+
+  
+    .card-description {
+      font-size: 14px;
+      left: 14em;
+      top: 2em;
+    }
+   
+   
+    .full-details{
+      margin-top: -5em;
+      left: 1.7em;
+    }
+    .full-more-details{
+   
+      font-size: 13px;
+      margin-top: -160px !important;
+     margin-left: -0.5em;
+     
+     
+    }
+    .mobile-details{
+      
+      margin-top: -7em ;
+      
+       
+    }
+    .mobile-about-the-film{
+      
+      font-size: 15.2192px;
+      
+    }
+    .mobile-more{
+     
+      font-size: 19px !important;
+    }
+  
+  }
+  @media screen and (max-width: 915px) {
+    .full-conteiner-video:nth-child(1) .video-js {
+  
+      width: 500px !important;
+      height: 281px !important;
+      border: 2px solid #333333 ;
+      border-radius: 5px ;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+     
+    
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    .background-pc {
+      padding: 0;
+    }
+    .movie-card-img{
+        width: 12rem !important;
+        width: 100%;
+    }
+    .movie-card {
+        
+      top: 2.5em;
+      left: 0.5em;
+      max-width: 150px;
+    }
+  
+    .card-description {
+      font-size: 12px;
+      left: 14.5em;
+      top: 4em;
+    }
+   
+   
+    .full-details{
+      margin-top: -5.3em;
+      left: 1.7em;
+    }
+    .full-more-details{
+   
+      font-size: 12px;
+      margin-top: -190px !important;
+     margin-left: -0.5em;
+     
+     
+   
+  }
+  .mobile-details{
+     
+    margin-top: -9em ;
+     
+    
+  }
+  .mobile-about-the-film{
+    
+    font-size: 14.7192px;
+    
+  }
+  .mobile-more{
+   
+    font-size: 17.5px !important;
+  }
+  }
+  
+  
+
+
+
+
+  @media (max-width: 670px) {
+    .background-pc {
+      padding: 0;
+    }
+    .movie-card-img{
+        width: 11.5rem !important;
+        width: 100%;
+    }
+    .movie-card {
+       
+      top: 2.5em;
+      left: 0.5em;
+      max-width: 150px;
+    }
+  
+    .card-description {
+      font-size: 11.6px;
+      left: 14.5em;
+      top: 4.5em;
+    }
+    
+   
+    .full-details{
+      margin-top: -5em;
+      left: 1.7em;
+    }
+    .full-more-details{
+   
+      font-size: 10px;
+      margin-top: -250px !important;
+     margin-left: -0.5em;
+     
+     
+    }
+     .mobile-details{
+     
+      margin-top: -10em ; 
+    
+    
+  }
+  
+  .mobile-about-the-film{
+    
+    font-size: 13.2192px;
+    
+  }
+  .mobile-more{
+   
+    font-size: 17px !important;
+  }
+
+  
+  }
+
+ 
+
+
+  @media (min-width: 600px) and (max-width: 860px) {
+    .card-title{
+      font-size: 3em;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  .Mobile{
+    display: block;
+    
+  }
+  .hero{
+    display: none;
+  }
+  
+  .movie-card{
+    display: block;
+  }
+  .full-player{
+    display: block;
+    
+  }
+  .mobile-details{
+    display: block;
+    
+  }
+    .mobile-img-card{
+        
+        overflow: hidden ;
+        border-radius: 10px;
+    }
+    .background-pc{
+        display: none;
+    }
+    .movie-card{
+        display: none;
+    }
+    .full-more-details{
+        display: none;
+    }
+    
+    
+    
+   
+    .mobile-card-description{
+      margin-top: -16.7em;
+      margin-left: 0.5em;
+      font-size: 12px;
+      width: 100%;
+      z-index: 12;
+    }
+    .mobile-quality{
+      width: 100%;
+      font-size: 1.3em;
+      color: white;
+    }
+    .mobile-img-card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+   
+}
+.buttons-on-top{
+  position: relative;
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  width: 100%;
+}
+.play-btn {
+  position: relative;
+  top: -11.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 226, 107);
+  
+  color: #000000;
+  font-family: "SegoeUI", sans-serif;
+  width: 70%;
+  height: 45px;
+  font-weight: 600;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  gap: 8px;
+  padding-right: 0.3em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавление тени */
+  
+}
+/* кнопка лайк */
+.details-content-area {
+  display: flex
+;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.Like{
+top: -10.3em;
+margin-left: -4em;
+}
+.Dislike{
+  top: -13.2em;
+margin-left: 4em;
+}
+.Button-Border-Radius {
+  position: relative;
+  border-radius: 50% !important;
+}
+.css-vubbuv {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kQnZoL {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 40px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border: 1.5px solid rgb(255, 255, 255) !important;
+  color: white !important;
+  cursor: pointer !important;
+  display: inline-flex !important
+;
+  -webkit-box-pack: center !important;
+  justify-content: center !important;
+  -webkit-box-align: center !important;
+  align-items: center !important;
+}
+.kQnZoL {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  color: white; /* Белый цвет для текста по умолчанию */
+  background-color: rgba(0, 0, 0, 0.1); /* Легкий темный фон */
+  border-color: rgb(255, 255, 255); /* Белая рамка */
+}
+
+.kQnZoL svg {
+  fill: white; /* Белый цвет для иконок по умолчанию */
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Когда кнопка активна */
+.kQnZoL.active {
+  background-color: white !important; /* Темный фон при активации */
+  color: black; /* Текст черным при активации */
+  border-color: black; /* Черная рамка при активации */
+}
+
+.kQnZoL.active svg {
+  fill: rgb(0, 0, 0); /* Черные иконки при активации */
+}
+
+  .round-btn-margin {
+      width: 47px !important;
+      height: 47px !important;
+  }
+  /* конец */
+  .Phone-version > div {
+    height: 80vh !important;
+  }
+
+.Phone-version {
+    position: relative;
+    justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center;
+    top: 0;
+    left: -0.8em !important;
+    width: 100vw !important; /* Вся ширина экрана */
+    height: 90vh; /* Вся высота экрана */
+    
+    
+   z-index: -1;
+   transition: margin-top 0.4s ease; /* Плавный переход для изменения marginTop */
+}
+.Phone-version::before {
+  content: "";
+  position: absolute;
+  top: -5em; /* Сдвигаем наверх, чтобы затемнение начиналось ниже */
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Затемнение снизу */
+.Phone-version::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, black 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+  .mobile-img{
+    display: none;
+  }
+  .mobile-img {
+    margin-top: 1.5em;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.9;
+      transition: opacity 0.5s ease-in-out;
+      transform: scale(1.4);
+  }
+  
+  /* Затемнение сверху */
+  .mobile-img-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 15%;
+      background: linear-gradient(black 0%, rgba(0, 0, 0, 0) 100%);
+      z-index: 2;
+      pointer-events: none;
+  }
+  
+  /* Затемнение снизу */
+  .mobile-img-card::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, black 100%);
+      z-index: 2;
+      pointer-events: none;
+  }
+  .full-card-rate{
+    font-size: 1.13em;
+  }
+  .full-genre{
+    font-size: 1.15em;
+  }
+  .mobile-details{
+    margin-top: 1em;
+  }
+  .mobile-about-the-film{
+    margin-top: 0.5em;
+    color: rgb(218, 215, 215);
+    font-size: 13.5px !important;
+    font-family: Helvetica, sans-serif;
+    width: 95%;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+  }
+  .mobile-more{
+    margin-left: 0.4em;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px !important;
+    
+  }
+  .card-title{
+    font-size: 3.5em;
+    line-height:1.1em;
+  }
+  .container-column {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос элементов */
+    max-width: 800px;
+    gap: 5px; /* Отступ 5 пикселей между столбцами */
+    font-family: "SegoeUI", sans-serif;
+}
+.text-capitalize{
+  width: 90%;
+}
+.text-capitalize span {
+  padding-right: 1.5em;
+}
+
+.column {
+    padding: 0;
+    background-color: #000000;
+    text-align: left;
+    
+    color: white;
+    line-height: 0.5em;
+}
+
+/* Два верхних столбца */
+.column:nth-child(1),
+.column:nth-child(2) {
+    padding-right: 23px;
+}
+
+/* Третий столбец переходит на новую строку */
+.column:nth-child(3) {
+    width: 100%; /* Полная ширина */
+    
+}
+.region{
+  margin-top: -0.5em;
+  line-height: 1.5;
+}
+  .full-conteiner-video{
+    margin-top: 0 !important;
+  }
+
+  .actor-name{
+    font-size: 13.5px;
+  }
+  
+}
+@media screen and (max-width: 550px) {
+  .full-conteiner-video:nth-child(1) .video-js {
+    width: 400px !important; /* Фиксированная ширина */
+    height: 200px !important; /* Фиксированная высота (16:9 соотношение сторон) */
+    
+  }
+  
+}
+@media screen and (max-width: 430px) {
+  .full-conteiner-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: none;
+    
+    
+    
+}
+.full-player{
+  left: 0;
+  max-width: none;
+}
+  .full-conteiner-video:nth-child(1) .video-js {
+    
+    
+    width: 100% !important; /* Фиксированная ширина */
+    height: 200px !important; /* Фиксированная высота (16:9 соотношение сторон) */
+    
+  }
+  
+}
+
+.full-conteiner-video{
+ position: sticky;
+ 
+  z-index: 10; /* Карточка будет поверх фона */
+  
+  display: flex;
+  flex-direction: row; /* Размещаем элементы в строку */
+  align-items: center; /* Выравнивание по вертикали */
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  
+}
+.video-js {
+  
+  width: 700px !important;
+  height: 400px !important;
+  border: 2px solid #333333 ;
+  border-radius: 5px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+ 
+}
+
+
+/* медиа для изображения заднего фона */
+@media (min-width: 2300px) and (max-width: 4000px) {
+  .hero{
+    height: calc(600px + 60vmin);
+    min-height: 1100px;
+    max-height: 1100px;
+  }
+}
+@media (min-width: 1900px) and (max-width: 2300px) {
+  .hero{
+    height: calc(500px + 50vmin);
+    min-height: 1000px;
+    max-height: 1000px;
+  }
+}
+@media (min-width: 1439px) and (max-width: 1900px) {
+  .hero{
+    height: calc(450px + 45vmin);
+    min-height: 750px;
+  max-height: 750px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1439px) {
+  .hero{
+  height: calc(400px + 40vmin);
+  min-height: 700px;
+  max-height: 700px;
+  }
+}
+/* конец */
+@media (min-width: 2300px) and (max-width: 4000px) {
+  .movie-card-img{
+    top: 2em;
+    width: 30rem !important;
+    height: 100% !important;
+  }
+  .card-description {
+    font-size: 30.5px;
+    left: 17.5em;
+    top: -0.5em;
+}
+.mobile-details{
+  margin-top: -8.7em;
+  
+}
+.mobile-more{
+  font-size: 33.5px !important;
+  }
+  .mobile-about-the-film{
+    font-size: 32.5px;
+  }
+  .actor-name{
+    font-size: 32.5px;
+  }
+  .video-js{
+    width: 1375px !important;
+    height: 800px !important;
+    border: 4px solid #333333 ;
+    border-radius: 5.5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+  }
+}
+@media (min-width: 2100px) and (max-width: 2300px) {
+  .video-js{
+    width: 1160px !important;
+    height: 675px !important;
+    border: 3.5px solid #333333 ;
+    border-radius: 5.5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+  }
+}
+@media (min-width: 1900px) and (max-width: 2100px) {
+  .video-js{
+    width: 1045px !important;
+    height: 600px !important;
+    border: 3px solid #333333 ;
+    border-radius: 5.5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+  }
+}
+
+@media (min-width: 1900px) and (max-width: 2300px) {
+  .movie-card-img{
+    top: 2em;
+    width: 24rem !important;
+    height: 100% !important;
+  }
+  .card-description {
+    font-size: 24.5px;
+    left: 17.5em;
+    top: 0.5em;
+}
+.mobile-details{
+  margin-top: -12.7em;
+  
+}
+.mobile-more{
+  font-size: 27.5px !important;
+  }
+  .mobile-about-the-film{
+    font-size: 26.5px;
+  }
+  .actor-name{
+    font-size: 26.5px;
+  }
+  
+}
+
+@media (min-width: 1705px) and (max-width: 1900px){
+  .movie-card-img{
+    top: 2em;
+    width: 21rem !important;
+    height: 100% !important;
+  }
+  .card-description {
+    font-size: 21.5px;
+    left: 17.5em;
+    top: 1em;
+}
+.mobile-details{
+  margin-top: -1.7em;
+  
+}
+.mobile-more{
+  font-size: 23.5px !important;
+  }
+  .mobile-about-the-film{
+    font-size: 22.5px;
+  }
+  .actor-name{
+    font-size: 22.5px;
+  }
+  .video-js{
+    width: 930px !important;
+    height: 525px !important;
+    border: 3px solid #333333 ;
+    border-radius: 5.5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+  }
+}
+
+@media (min-width: 1521px) and (max-width: 1705px){
+  
+  .movie-card-img{
+    top: 2em;
+    width: 19rem !important;
+    height: 100%;
+  }
+  .card-description {
+    font-size: 19px;
+    left: 17.5em;
+    top: 2em;
+}
+.mobile-details{
+  margin-top: -4.7em;
+  
+}
+.mobile-more{
+  font-size: 23px !important;
+  }
+  .mobile-about-the-film{
+    font-size: 21px;
+  }
+  .actor-name{
+    font-size: 21px;
+  }
+  .video-js{
+    width: 875px !important;
+    height: 500px !important;
+    border: 2.5px solid #333333 ;
+    border-radius: 5.5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+  }
+}
+
+
+@media (min-width: 1439px) and (max-width: 1521px) {
+
+  
+  .movie-card-img{
+    top: 2em;
+    width: 17rem !important;
+    height: 100%;
+  }
+  .card-description {
+    font-size: 18px;
+    left: 16.5em;
+    top: 2.5em;
+}
+.mobile-details{
+  margin-top: -7.7em;
+  
+}
+.mobile-more{
+font-size: 19px;
+}
+.mobile-about-the-film{
+  font-size: 18px;
+}
+.actor-name{
+  font-size: 18px;
+}
+}
+@media (min-width: 1400px) and (max-width: 1521px) {
+  .video-js{
+    width: 775px !important;
+    height: 445px !important;
+    border: 2.5px solid #333333 ;
+    border-radius: 5.5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1439px) {
+  .movie-card-img{
+    top: 2em;
+    
+  }
+  .card-description {
+   
+    top: 3.5em;
+}
+  .mobile-details{
+    
+    margin-top: -6.25em;
+  }
+  
+}
