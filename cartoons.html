@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cinematic - Каталог мультфильмов</title>
+  <meta name="description"
+    content="Коллекция фильмов, сериалов, аниме и мультфильмов в отличном качестве, доступная для просмотра онлайн в любое время.">
+  <meta name="keywords"
+    content="фильмы, сериалы, аниме, мультфильмы, смотреть онлайн, кино, сериалы онлайн, аниме онлайн, лучшие фильмы, новинки кино, мультфильмы для детей, аниме 2025, кино онлайн">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="rating" content="general">
+  <meta name="language" content="ru">
+
+  <meta property="og:title" content="Cinematic - Каталог мультфильмов">
+  <meta property="og:description" content="Коллекция фильмов, сериалов, аниме и мультфильмов в отличном качестве, доступная для просмотра онлайн в любое время.">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:image" content="source/images/logo/LOGO.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cinematic - Каталог мультфильмов">
+  <meta name="twitter:description" content="Коллекция фильмов, сериалов, аниме и мультфильмов в отличном качестве, доступная для просмотра онлайн в любое время.">
+  <meta name="twitter:image" content="source/images/logo/LOGO.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/style/mycss.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+
+
+  <link rel="icon" type="image/png" href="source/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="source/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="source/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="source/images/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Cinematic" />
+  <link rel="manifest" href="source/images/favicon/site.webmanifest" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CT8S6973BB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CT8S6973BB');
+</script>
+
+
+</head>
+
+<body>
+  <header>
+
+
+    <div class="navbar-placeholder"></div>
+    <nav class="navbar  navbar-expand-lg bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="source/images/logo/cinematic.png"
+            style="width: 150px; height: 50px;" alt="..." loading="lazy"></a>
+
+        <div class="mobilescreen ">
+          <div title="Menu" id="menuToggle">
+
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li>
+                <a href="index.html"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/home.svg"
+                    style="width: 25px; height: 25px; margin-bottom: 5px;" alt="">
+                  Домой
+                </a>
+              </li>
+              <li>
+                <a href="movies.html"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/movies.svg"
+                    style="width: 25px; height: 25px; margin-bottom: 5px;" alt="">
+                  Фильмы
+                </a>
+              </li>
+              <li>
+                <a href="series.html"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/сериалы.svg"
+                    style="width: 23px; height: 25px; margin-bottom: 5px;" alt="">
+                  Сериалы
+                </a>
+              </li>
+              <li>
+                <a href="cartoons.html"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/cartoon.svg"
+                    style="width: 25px; height: 25px; margin-bottom: 5px; filter: invert(0.9);" alt="">
+                  Мультфильмы
+                </a>
+              </li>
+              <li>
+                <a href="anime.html"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/anime-mobile.svg"
+                    style="width: 25px; height: 25px; margin-bottom: 5px; filter: invert(0.9);" alt="">
+                  Аниме
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/online.cinematic" target="_blank"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/Instagram.png"
+                    style="width: 22px; height: 22px; margin-bottom: 5px;" alt="">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@online.cinematic" target="_blank"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/youtube.png"
+                    style="width: 25px; height: 20px; margin-bottom: 5px;" alt="">
+                  Youtube
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@online.cinematic" target="_blank"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/tiktok.png"
+                    style="width: 25px; height: 28px; margin-bottom: 5px;" alt="">
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/onl_Cinematic" target="_blank"
+                  style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                  <img class="navbar-img" src="source/images/logo/twitter-white.png"
+                    style="width: 25px; height: 25px; margin-bottom: 5px;" alt="">
+                  X
+                </a>
+              </li>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="collapse navbar-collapse custom-navbar" id="navbarNav">
+          <ul class="navbar-nav mx-0" id="nav-menu">
+            <li class="nav-item mx-4">
+              <img class="navbar-img  navbar-img-home" src="source/images/logo/home.svg" style=" margin-left: 1.3em; "
+                alt="">
+              <a class="nav-link " aria-current="page" href="index.html">Домой</a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <img class="navbar-img  navbar-img-movies" src="source/images/logo/movies.svg" alt="">
+              <a class="nav-link movies-text" href="movies.html">Фильмы</a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <img class="navbar-img navbar-img-serials " src="source/images/logo/сериалы.svg" alt="">
+              <a class="nav-link serials-text" href="series.html">Сериалы</a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <img class="navbar-img navbar-img-cartoon" src="source/images/logo/cartoon.svg"
+                style="filter: invert(0.9);" alt="">
+              <a class="nav-link cartoones-text" href="cartoons.html">Мультфильмы</a>
+            </li>
+
+            <li class="nav-item mx-4">
+              <img class="navbar-img navbar-img-anime" src="source/images/logo/anime-mobile.svg"
+                style="filter: invert(1);" alt="">
+              <a class="nav-link anime-text" href="anime.html">Аниме</a>
+            </li>
+
+
+
+
+        </div>
+
+        </ul>
+
+
+      </div>
+      </div>
+
+      <div class="search-wrapper">
+        <div class="search-container">
+          <div class="search-icon">
+            <img class="navbar-img  " src="source/images/logo/панель поиска.svg"
+              style="width: 20px; height: 20px ; filter: invert(1); " alt="">
+          </div>
+          <input type="text"  id="search" class="search-input" placeholder="Поиск..." >
+          <span class="clear-icon">&times;</span> <!-- Крестик -->
+        </div>
+
+    </nav>
+  </header>
+
+  <section>
+    <div class="container-fluid results-container " id="results-container">
+
+      <div class="row " style="overflow: hidden;">
+
+        <h4 class="results-h4">Результаты поиска</h4>
+
+        <div id="update" class="card-results">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container-fluid content mt-4 ">
+      <div class="row">
+
+
+        <!-- основной экран -->
+
+      </div>
+
+      <!-- что бы добавить карты товаров нужен container-fluid контейрен row -->
+
+
+
+
+      <!-- популярные фильмы -->
+
+
+
+      <div class="container-fluid mt-2 g-0">
+        <div class="row">
+          <div class="col-lg-4 ">
+            <h4 class="Top-h4" id="up">Топ 10 мультфильмов</h4>
+          </div>
+
+          <div class="slider mt-2">
+            <div class="col-lg-12 col-md-12">
+              <div class="row ">
+                <div class="single-item2">
+                  <div class="second-slider splide" id="image-slider">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+
+
+                          <div class="card card-media3" style="width: 12rem ">
+                            <a href="card/cartoons/500-08/Ratatuj.html">
+                              <img src="https://image.tmdb.org/t/p/original/d2Dre7DZX2Z7ltz9XTCy2ElAQ8X.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.8</span>
+                              </div>
+                              <div class="card-body">
+
+                                <span class="card-tex">Рататуй </span><span class="year">2007</span></span>
+                            </a>
+                          </div>
+
+
+                        </li>
+                        <li class="splide__slide">
+
+                          <div class="card card-media3" style="width: 12rem ">
+                            <a href="card/cartoons/500-12/Tachki.html">
+                              <img src="https://image.tmdb.org/t/p/original/xWO85vVZmFiZdkwXXhbFXNgKDKD.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.0</span>
+                              </div>
+                              <div class="card-body">
+
+                                <span class="card-tex">Тачки </span><span class="year">2006</span></span>
+                            </a>
+                          </div>
+
+
+                        </li>
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-15/VALL·I.html">
+                              <img src="https://image.tmdb.org/t/p/original/ai2FicMUxLCurVkjtYdSvVDWRmS.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">8.1</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">ВАЛЛ·И </span><span class="year">2008</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-17/Aladdin.html">
+                              <img src="https://image.tmdb.org/t/p/original/t7x0JalWf0CwdtvDnVq2U8Av6Sq.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.7</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">Аладдин </span><span class="year">1992</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-19/Krasavica-i-chudovishe.html">
+                              <img src="https://image.tmdb.org/t/p/original/h891thXXBYgzJeli6VPNd79zrFP.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.7</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">Красавица и чудовище </span><span class="year">1991</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-22/Korporaciya-Monstrov.html">
+                              <img src="https://image.tmdb.org/t/p/original/hVxPPgSL72qS18jIB3eWXoAsoWu.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.8</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">Корпорация Монстров</span><span class="year">2001</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-24/V-poiskah-Nemo.html">
+                              <img src="https://image.tmdb.org/t/p/original/pDMndR1yj7WHZmLTwzLxMu16xxD.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.8</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">В поисках Немо </span><span class="year">2003</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-26/Ralf.html">
+                              <img src="https://image.tmdb.org/t/p/original/3IFRjBDwtk0DlIsDfJ2zEzLjUBi.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.3</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">Ральф </span><span class="year">2012</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-29/Koshmar-pered-Rozhdestvom.html">
+                              <img src="https://image.tmdb.org/t/p/original/ts7bGreoFKxbYpXv2LCygTdXI5H.jpg"
+                                class="card-img-top sirials-watch-img" style="width: 226px; height: 127px;" alt="..."
+                                loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.8</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">Кошмар перед Рождеством</span><span class="year">1993</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                        <li class="splide__slide">
+                          <div class="card card-media3" style="width: 12rem">
+                            <a href="card/cartoons/500-31/Istoriya-igrushek-3.html">
+                              <img src="https://image.tmdb.org/t/p/original/uAfhsySkr1UzQg1zdg3dZQRz9Fd.jpg" class="card-img-top sirials-watch-img"
+                                style="width: 226px; height: 127px;" alt="..." loading="lazy">
+                              <div class="card-rating" bis_skin_checked="1"><span class="span-rating">7.8</span></div>
+                              <div class="card-body">
+                                <span class="card-tex">История игрушек 3</span><span class="year">2010</span></span>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <!-- основной экран -->
+
+
+
+
+
+
+
+                <div class="container all-film Cartoon mt-4">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-lg-3 ms-1">
+                      <h4 style="margin-bottom: 0.5em;">Мультфильмы</h4>
+                    </div>
+
+                  </div>
+                  <div class="row g-0">
+
+ <div class="row g-0" id="movies-container"></div>
+
+
+
+
+    <script  src="source/script/placeholder.js"></script>
+<script  src="source/script/mass-cartoons.js"></script>
+<script  src="source/script/render-cartoons.js"></script>
+
+
+ </div>
+
+
+
+
+
+
+
+
+    <!-- конец -->
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- конец -->
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+
+  </section>
+
+
+  <footer class="footer mt-4 d-none">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 ">
+          <p class="Available-Platforms">Доступные платформы</p>
+          <div class="platform-logos ">
+            <a href="#">
+              <img src="source/images/logo/Roku_logo.png" style="width: 60px;" alt="Roku">
+            </a>
+            <a href="#">
+              <img src="source/images/logo/Android_logo.png" style="width: 90px;" alt="Android">
+            </a>
+            <a href="#">
+              <img src="source/images/logo/apple-IOS-icon.png" style="width: 60px;" alt="Apple IOS">
+            </a>
+            <a href="#">
+              <img src="source/images/logo/vizio.png" style="width: 80px;" alt="Vizio">
+            </a>
+            <a href="#">
+              <img src="source/images/logo/AndroidTV_logo.png" style="width: 110px;" alt="AndroidTV">
+            </a>
+            <a href="#">
+              <img src="source/images/logo/tv-os.png" style="width: 75px;" alt="TV OS">
+            </a>
+            <a href="#">
+              <img src="source/images/logo/Google-tv.png" style="width: 110px;" alt="Google TV">
+            </a>
+            <div class="platform-logos2 ">
+              <a href="#">
+                <img src="source/images/logo/Fire_TV_logo.png" style="width: 55px;" alt="Fire TV">
+              </a>
+              <a href="#">
+                <img src="source/images/logo/samsung_logo_1.png" style="width: 90px;" alt="Samsung">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-12 media-links mt-4">
+
+          <!-- Первая картинка сверху -->
+          <a href="index.html">
+            <img class="logo-image logo-image-footer" src="source/images/logo/Лого низ.png" alt="Лого">
+          </a>
+
+          <!-- Блок с 3 картинками под первой -->
+          <div class="social-icons">
+            <a href="https://www.instagram.com/online.cinematic" target="_blank">
+              <img src="source/images/logo/Instagram.png" style="width: 18px;" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@online.cinematic" target="_blank">
+              <img src="source/images/logo/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://x.com/onl_Cinematic" target="_blank">
+              <img src="source/images/logo/twitter-white.png" style="width: 18px;" alt="Twitter">
+            </a>
+            <a href="https://www.tiktok.com/@online.cinematic" target="_blank">
+              <img src="source/images/logo/tiktok.png" style="width: 19px;" alt="TikTok">
+            </a>
+          </div>
+
+          <!-- Текст под всеми картинками -->
+          <div class="footer-text text-center">
+            <a href="#" class="card-tex">© 2024 <span class="cinematic-text">Cinematic</span>. All Rights Reserved</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js" defer></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="source/script/placeholder-16x9.js"></script>
+  <script src="source/script/pages-2.0.js"></script>
+
+  
+  <script src="source/script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
